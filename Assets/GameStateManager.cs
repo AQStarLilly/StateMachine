@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameStateManager : MonoBehaviour
 {
     public GameManager gameManager;
+    public GameObject Cube;
 
     // Enum representing different game states
     public enum GameState
@@ -50,7 +51,7 @@ public class GameStateManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.M))
         {
-            ChangeState(GameState.MainMenu_State);
+            ChangeState(GameState.MainMenu_State);          
         }
 
         if (Input.GetKeyDown(KeyCode.Escape) && (currentState == GameState.Gameplay_State || currentState == GameState.Paused_State))
@@ -69,6 +70,15 @@ public class GameStateManager : MonoBehaviour
         {
             ChangeState(GameState.Gameplay_State);
         }
+
+        if((currentState == GameState.Gameplay_State) || (currentState == GameState.Paused_State))
+        {
+            Cube.SetActive(true);
+        }
+        else
+        {
+            Cube.SetActive(false);
+        }
     }
 
 
@@ -80,7 +90,7 @@ public class GameStateManager : MonoBehaviour
             case GameState.MainMenu_State:
                 gameManager.uIManager.EnableMainMenuUI();
                 // TODO: Add logic for when the game enters the Main Menu (e.g., show UI)
-                Time.timeScale = 1;
+                Time.timeScale = 0;
                 break;
 
             case GameState.Gameplay_State:
