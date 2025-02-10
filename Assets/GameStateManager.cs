@@ -106,4 +106,9 @@ public class GameStateManager : MonoBehaviour
     {
         ChangeState(GameState.Gameplay_State);       
     }
+
+    public void OnApplicationQuit()
+    {
+        Application.Quit();
+    }
 }
