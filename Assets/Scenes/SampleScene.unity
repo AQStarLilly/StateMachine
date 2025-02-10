@@ -137,7 +137,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &27445419
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1230,7 +1230,7 @@ GameObject:
   - component: {fileID: 1150844928}
   - component: {fileID: 1150844927}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: QuitTXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1555,7 +1555,7 @@ GameObject:
   - component: {fileID: 1467848346}
   - component: {fileID: 1467848345}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1965,7 +1965,7 @@ GameObject:
   - component: {fileID: 1671536052}
   - component: {fileID: 1671536051}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: PlayTXT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2233,7 +2233,7 @@ GameObject:
   - component: {fileID: 1921474479}
   - component: {fileID: 1921474478}
   m_Layer: 0
-  m_Name: Image
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
